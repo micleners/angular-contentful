@@ -4,15 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ContentfulService } from './contentful.service';
+import { ProductListComponent } from './product-list/product-list.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  declarations: [AppComponent, ProductListComponent],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
