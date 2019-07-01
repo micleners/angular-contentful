@@ -14,7 +14,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit() {
     this.contentfulService
-      .getProducts()
+      .getEvents()
       .then(products => (this.products = products));
   }
 }
